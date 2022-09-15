@@ -1,4 +1,6 @@
-// rain water trapping
+/*Given n non-negative integers representing an elevation map where the width of each bar is 1,
+ compute how much water it can trap after raining.*/
+// rain water trapping.........
 #include <stdio.h>
 int main(void)
 {
@@ -65,3 +67,23 @@ int main(void)
     printf("\nsum is: %d", sum);
     return 0;
 }
+/*
+Enter the no of blocks:6
+Enter the height of 6 blocks:
+Enter a[0]:0
+
+Enter a[1]:1
+
+Enter a[2]:0
+
+Enter a[3]:2
+
+Enter a[4]:1
+
+Enter a[5]:0
+
+acording to left maximum numbers of wall is:0 1 1 2 2 2
+acording to right maximum numbers of wall is:0 1 2 2 2 2
+ total no of water which is in trap:0 0 1 0 0 0
+sum is: 1
+*/

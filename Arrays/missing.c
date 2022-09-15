@@ -1,15 +1,13 @@
-/*Given an array arr[] and an integer K where K is larger than size of array,
-the task is to find the Kth largeest element in the given array.It is given that all array elements are distinct.*/
+// find the missing integer between two integers.difference between missing and given integer should be 1....
+
 #include <stdio.h>
 #include <stdlib.h>
 int main(void)
 {
-    int i, j, n, k, temp;
+    int i, j, n, diff, temp;
     printf("Enter the size of an array:");
     scanf("%d", &n);
-    int a[n], new_array[n];
-    printf("Enter the kth largset number:");
-    scanf("%d", &k);
+    int a[n];
     printf("\nEnter %d elements in the array:", n);
     for (i = 0; i < n; i++)
     {
@@ -21,7 +19,7 @@ int main(void)
     {
         for (j = 0; j < n - i - 1; j++)
         {
-            if (a[j] < a[j + 1])
+            if (a[j] > a[j + 1])
             {
                 temp = a[j];
                 a[j] = a[j + 1];
@@ -29,20 +27,33 @@ int main(void)
             }
         }
     }
-    printf("\n sorted array is:");
+    printf("sorted array is :");
     for (i = 0; i < n; i++)
     {
-        printf("%d  ", a[i]);
+        printf("%d ", a[i]);
     }
-    // for finding kth largset number
+    // for find missing
+    printf("\nmissing elements is:");
     for (i = 0; i < n; i++)
     {
-        if (k - i == 1)
+        diff = a[i + 1] - a[i];
+        if (diff > 1 && diff < 3)
         {
-            printf("\n %dth largest element is :%d", k, a[i]);
-            exit(0);
+            printf("%d  ", a[i + 1] - 1);
         }
     }
-
     return 0;
 }
+/*output:
+Enter the size of an array:4
+Enter 4 elements in the array:
+ Enter a[0]: 7
+
+ Enter a[1]: 5
+
+ Enter a[2]: 3
+
+ Enter a[3]: 4
+sorted array is :3 4 5 7
+missing elements is:6
+*/
