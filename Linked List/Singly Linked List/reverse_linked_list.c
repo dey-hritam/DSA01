@@ -1,3 +1,4 @@
+//reverse the linked_list.....
 #include <stdio.h>
 #include <stdlib.h>
 struct nodes
