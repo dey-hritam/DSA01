@@ -1,3 +1,4 @@
+// insert a element in sorted position by linked list:
 #include <stdio.h>
 #include <stdlib.h>
 struct node
@@ -16,7 +17,7 @@ void create_node(int n)
     }
     else
     {
-        printf("Enter data for  node[0]:");
+        printf("Enter data for node[0]:");
         scanf("%d", &val1);
         head->data = val1;
         head->link = NULL;
@@ -47,7 +48,7 @@ void insert_node(int n, struct node *head)
     int val, key;
     struct node *temp = NULL, *newp = NULL;
     newp = (struct node *)malloc(sizeof(struct node));
-    printf("Enter the data for new nodes:");
+    printf("Enter the data for new node:");
     scanf("%d", &val);
     temp = head;
     if (newp == NULL)
@@ -98,3 +99,13 @@ int main(void)
     scanf("%d", &n);
     create_node(n);
 }
+/*
+Output:-
+Enter the number of nodes you want to create:4
+Enter data for node[0]:10
+Enter data for node[1]:20
+Enter data for node[2]:30
+Enter data for node[3]:40
+Enter the data for new node:35
+10  20  30  35  40
+*/
