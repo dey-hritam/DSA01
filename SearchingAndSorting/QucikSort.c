@@ -1,3 +1,11 @@
+//Sort the given array using Quick sort method.
+
+/* Time Complexity:-
+        The average time complexity of quick sort is O(N log(N)).
+        The derivation is based on the following notation: T(N) = Time Complexity of Quick Sort for input of size N.
+        At each step, the input of size N is broken into two parts say J and N-J.
+*/
+
 #include <stdio.h>
 void QuickSort(int a[], int, int);
 int partition(int a[], int, int);
@@ -13,7 +21,7 @@ int main()
         scanf("%d", &a[i]);
     }
     QuickSort(a, 0, n - 1);
-    printf("After sorting the array is:");
+    printf("Sorted array is:");
     for (i = 0; i < n; i++)
     {
         printf("  %d", a[i]);
@@ -49,3 +57,15 @@ int partition(int a[], int low, int high)
     a[high] = swap;
     return i;
 }
+/* Output:-
+Enter the range of the Array:4
+
+Enter a[0]:7
+
+Enter a[1]:2
+
+Enter a[2]:5
+
+Enter a[3]:10
+Sorted array is:  2  5  7  10
+*/

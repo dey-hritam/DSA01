@@ -1,3 +1,12 @@
+//Sort the given Array using Selection Sort method.
+
+/*Time Complexity:-
+Time & Space Complexity of Selection Sort:-
+Worst Case Time Complexity is: O(N2)
+Average Case Time Complexity is: O(N2)
+Best Case Time Complexity is: O(N2)
+Space Complexity: O(1)
+*/
 #include <stdio.h>
 void SelectionSort(int a[], int);
 int main()
@@ -36,3 +45,17 @@ void SelectionSort(int a[], int size)
         a[i] = swap;
     }
 }
+
+/*Output:-
+Enter the size of the array:4
+
+Enter a[0]:5
+
+Enter a[1]:9
+
+Enter a[2]:2
+
+Enter a[3]:8
+
+ Sorted Array is:  2  5  8  9
+*/
