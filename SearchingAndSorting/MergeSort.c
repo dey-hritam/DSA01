@@ -1,3 +1,10 @@
+//Sort the given array using merge sort.
+
+/*Time Complexity:-
+    Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation,
+    T(n) = 2T(n/2) + O(n) The solution of the above recurrence is O(nLogn).*/
+
+
 #include <stdio.h>
 void Divide(int a[], int, int);
 void Conqure(int a[], int, int, int);
@@ -68,3 +75,17 @@ void Conqure(int a[], int low, int mid, int high)
         a[j] = merged[i];
     }
 }
+/*output:-
+Enter the range of the Array:5
+    
+Enter a[0]:6
+
+Enter a[1]:8
+
+Enter a[2]:9
+
+Enter a[3]:5
+
+Enter a[4]:2
+Sorted array is:  2  5  6  8  9
+*/
