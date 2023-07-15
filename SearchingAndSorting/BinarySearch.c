@@ -1,3 +1,5 @@
+//Serach the given number using binary search method.
+
 #include <stdio.h>
 int BinarySearch(int a[], int, int, int);
 int main()
@@ -21,7 +23,7 @@ int main()
     }
     else
     {
-        printf("%d element found at %d index", t, index);
+        printf("element %d found at index no : %d", t, index);
     }
 }
 int BinarySearch(int a[], int low, int high, int val)
@@ -45,3 +47,20 @@ int BinarySearch(int a[], int low, int high, int val)
     }
     return -1;
 }
+
+//output:-
+
+/*
+Enter the size of the array:4
+
+Enter the elements in sorted way:
+Enter a[0]:1
+
+Enter a[1]:5
+
+Enter a[2]:9
+
+Enter a[3]:2
+Enter the target:9
+element 9 found at index no : 2
+*/
