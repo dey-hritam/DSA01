@@ -1,4 +1,10 @@
 //Sort the given array using insertion sort method
+
+/* Time Complexity:-
+    Complexity Analysis of Insertion Sort
+    Therefore, the insertion sort algorithm encompasses a time complexity of O(n2) and a space complexity of O(1),
+    because it necessitates some extra memory space for a key variable to perform swaps.
+*/
 #include <stdio.h>
 void insertionSort(int a[], int);
 int main()
