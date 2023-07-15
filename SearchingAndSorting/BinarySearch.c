@@ -1,5 +1,11 @@
 //Serach the given number using binary search method.
 
+/*Time Complexity:-
+    The time complexity of the binary search algorithm is O(log n). 
+    The best-case time complexity would be O(1) when the central index would directly match the desired value, 
+    Binary search worst case differs from that.
+*/
+
 #include <stdio.h>
 int BinarySearch(int a[], int, int, int);
 int main()
