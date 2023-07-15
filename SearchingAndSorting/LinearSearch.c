@@ -1,4 +1,12 @@
 //Find the given element using Linear Search method.
+
+/* Time complexity:-
+    The best-case time complexity of linear search is O(1). 
+    Average Case Complexity - The average case time complexity of linear search is O(n). 
+    Worst Case Complexity - In Linear search, 
+    the worst case occurs when the element we are looking is present at the end of the array. 
+*/
+
 #include <stdio.h>
 int main()
 {
