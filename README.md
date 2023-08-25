@@ -1,9 +1,6 @@
 # DSA01
 
-| Table name | location                                      |
-| ---------- | --------------------------------------------- |
-| Arrays     | [arrays](./Arrays/)                           |
-| Searching  |                                               |
-| &          | [SearchingAndSorting](./SearchingAndSorting/) |
-| Sorting    |                                               |
-
+| Table name          | location                                      |
+| ------------------- | --------------------------------------------- |
+| Arrays              | [arrays](./Arrays/)                           |
+| Searching & Sorting | [SearchingAndSorting](./SearchingAndSorting/) |
