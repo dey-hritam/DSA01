@@ -3,9 +3,7 @@
 | Table name | location                                      |
 | ---------- | --------------------------------------------- |
 | Arrays     | [arrays](./Arrays/)                           |
-| ---------- | --------------------------------------------- |
 | Searching  |                                               |
 | &          | [SearchingAndSorting](./SearchingAndSorting/) |
 | Sorting    |                                               |
-| ---------- | --------------------------------------------- |
-| Stack      | [Stack] (./Stack)                             |
+
