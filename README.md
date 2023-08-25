@@ -4,3 +4,4 @@
 | ------------------- | --------------------------------------------- |
 | Arrays              | [arrays](./Arrays/)                           |
 | Searching & Sorting | [SearchingAndSorting](./SearchingAndSorting/) |
+| Stack               | [stack](./Stack/)                             |
